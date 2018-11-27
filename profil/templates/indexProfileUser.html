@@ -1,0 +1,31 @@
+{% extends 'profileUser.html' %}
+{% load static %}
+{% block showProfile %}
+    <div class="col-1"></div>
+    <div class="col-10 profilePanel text-center">
+        <table>
+            <tr>
+                <th>Username: {{ user.username }}</th>
+            </tr>
+            <tr>
+                <th>Name: {{ user.first_name }}</th>
+            </tr>
+            <tr>
+                <th>Surename: {{ user.last_name }}</th>
+            </tr>
+            <tr>
+                <th>Email: {{ user.email }}</th>
+            </tr>
+            <tr>
+                <th>ID card: {{ profil.nr_dowodu }}</th>
+            </tr>
+            <tr>
+                <th>Driver license: {{ profil.nr_prawa_jazdy }}</th>
+            </tr>
+            <tr>
+                <th>Phone number: {{ profil.nr_telefonu }}</th>
+            </tr>
+        </table>
+    </div>
+    <div class="col-1"></div>
+{% endblock %}

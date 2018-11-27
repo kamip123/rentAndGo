@@ -1,0 +1,148 @@
+#topBar .col-6{
+    padding-top: 30px;
+    padding-left:15px;
+}
+
+.navbar-brand{
+    padding: 10px;
+	background-color: darkred;
+}
+
+#form {
+    background-image:url('../assets/background.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#map {
+    width:100%;
+    height: 100%;
+}
+
+.pickdate{
+    width: 60%;
+}
+h2{
+    margin-top: 20px;
+}
+
+h3{
+    margin-top: 10px;
+}
+
+#text{
+   margin-top:20px;
+
+}
+
+.mapa{
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: rgb(12, 98, 145, 0.8);
+    border-radius: 25px;
+}
+
+.daneFirmy{
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: rgb(12, 98, 145, 0.9);
+    border-radius: 25px;
+}
+
+.podanieDanych{
+    margin-top: 10px;
+    margin-left: 15px;
+    background-color: rgb(12, 98, 145, 0.8);
+    border-radius: 25px;
+}
+
+.partners{
+    background-color: rgb(12, 98, 145, 0.8);
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 25px;
+}
+
+table {
+	font-family: arial, sans-serif;
+    width:100%;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+th, td {
+  padding: 1em;
+  background: #ddd;
+  border-bottom: 2px solid blue;
+}
+
+[type="date"]{
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+  }
+  [type="date"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  [type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+
+   .time, .pickdate, .place {
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 3px 5px;
+    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+
+  }
+
+  .container{
+    background-color:rgb(17, 121, 178, 0.95);
+    border: 3px solid #c4c4c4;
+    border-radius: 5px;
+    display:flex;
+  }
+
+    .time{
+        width:20%;
+        float:right;
+
+    }
+
+    .przycisk {
+        margin-top: 20px;
+        float: left;
+        cursor: pointer;
+        width: 100%;
+        padding: 20px 25px;
+        background-color: #95cfed;
+        color: #14658f;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: none;
+        border: 1px solid #2f7ea7;
+        -moz-border-radius: 7px;
+        -webkit-border-radius: 7px;
+        border-radius: 7px;
+        text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7),
+        0 -1px 0 rgba(64, 38, 5, 0.9);
+
+
+        }
+    .przycisk:hover{
+        background-color: #b8dbed;
+    }
+        .checkboxinfo{
+            font-size:medium;
+        }
+
+        .place{
+            width:100%;
+        }
+
+        .checkbox{
+        margin-top: 20px;
+        }
+
