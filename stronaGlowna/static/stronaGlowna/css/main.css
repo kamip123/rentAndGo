@@ -1,6 +1,15 @@
-#topBar .col-6{
-    padding-top: 30px;
-    padding-left:15px;
+#topBar .estset{
+    margin: auto;
+}
+
+.estset p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper {
+    max-width: 1300px !important;
+    margin: auto;
 }
 
 .navbar-brand{
@@ -9,20 +18,22 @@
 }
 
 #form {
-    background-image:url('../assets/background.jpg');
+    background-image:url('../assets/mainPageSideCar.jpg');
 	background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: right bottom;
 }
 
-#map {
-    width:100%;
-    height: 100%;
+.podanieDanych {
+    margin: auto;
 }
 
 .pickdate{
     width: 60%;
+    height: 35px;
 }
+
 h2{
     margin-top: 20px;
 }
@@ -36,35 +47,103 @@ h3{
 
 }
 
-.mapa{
-    margin-top: 10px;
-    margin-left: 15px;
-    background-color: rgb(12, 98, 145, 0.8);
-    border-radius: 25px;
-}
-
-.daneFirmy{
-    margin-top: 10px;
-    margin-left: 15px;
-    background-color: rgb(12, 98, 145, 0.9);
-    border-radius: 25px;
-}
-
 .podanieDanych{
     margin-top: 10px;
     margin-left: 15px;
-    background-color: rgb(12, 98, 145, 0.8);
+    background-color: rgb(12, 98, 145);
     border-radius: 25px;
 }
 
 .partners{
-    background-color: rgb(12, 98, 145, 0.8);
+    background-color: rgb(12, 98, 145);
     margin-top: 10px;
     margin-left: 15px;
     border-radius: 25px;
 }
 
-table {
+.carOffertRow {
+	background-color:rgb(17, 121, 178, 0.95);
+
+}
+
+.carOfferCell {
+	width: 33%;
+}
+
+.carOffertEndCell {
+	width: 33%;
+}
+
+.offertContainer {
+    border: 1px solid #640000;
+    background-color:rgb(17, 121, 178, 0.95);
+}
+
+.offertsWrapper {
+    background-color:rgb(7, 111, 168, 1.0);
+}
+
+.mapWrapper {
+    background-color:rgb(5, 106, 163, 1.0);
+}
+
+.infoWrapper {
+    background-color:rgb(12, 116, 173, 1.0);
+}
+
+.offertImage{
+    margin: auto;
+    margin-top: 5px;
+    height:300px;
+    width:300px;
+    border: 1px solid #640000;
+}
+
+.offertTable {
+    margin: auto;
+    padding: 0px;
+    margin-top: 0px !important;
+    margin-bottom: 40px !important;
+}
+
+.carousel table {
+	font-family: arial, sans-serif;
+	margin-top:30px;
+	border-collapse: separate;
+	border-spacing: 0;
+}
+
+.pBorderBottom {
+    border-bottom: 1px solid #640000;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+}
+
+.pBorderBoth {
+    border-top: 1px solid #640000;
+    border-bottom: 1px solid #640000;
+
+}
+
+.carousel-control-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+/*
+.carousel td, .carousel th, .carousel tr {
+	border: 1px solid #640000;
+	text-align: left;
+	padding: 8px;
+}
+*/
+
+footer table {
 	font-family: arial, sans-serif;
     width:100%;
     border-collapse: collapse;
@@ -72,8 +151,8 @@ table {
     overflow: hidden;
 }
 
-th, td {
-  padding: 1em;
+footer th, footer td {
+  padding: 5px;
   background: #ddd;
   border-bottom: 2px solid blue;
 }
@@ -89,25 +168,18 @@ th, td {
   }
 
    .time, .pickdate, .place {
-    border: 1px solid #c4c4c4;
-    border-radius: 5px;
-    background-color: #fff;
-    padding: 3px 5px;
-    box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        background-color: #fff;
+        padding: 3px 5px;
+        box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
 
-  }
-
-  .container{
-    background-color:rgb(17, 121, 178, 0.95);
-    border: 3px solid #c4c4c4;
-    border-radius: 5px;
-    display:flex;
-  }
+   }
 
     .time{
         width:20%;
         float:right;
-
+        height: 35px;
     }
 
     .przycisk {

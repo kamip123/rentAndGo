@@ -22,6 +22,7 @@ class Samochod(models.Model):
     rodzaj_paliwa = models.CharField(max_length=50, default="Ropa")
     spalanie = models.FloatField(max_length=20, default=8)
     typ = models.CharField(max_length=50, default="Osobowe")
+    ilosc_miejsc = models.IntegerField(default=5)
 
     def __str__(self):
         return self.marka
