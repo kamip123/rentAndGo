@@ -176,7 +176,7 @@
                                     <option>21</option>
                                     <option>22</option>
                                 </select>
-                                <a class="przycisk" href="#">Search</a>
+                                <a class="przycisk" href="">Search</a>
                             </form>
                         </div>
                     </div>
@@ -214,65 +214,113 @@
                             {% if forloop.counter == 1 %}
                             <div class="carousel-item active">
                                 <div class="offertContainer">
-                                    <img class="offertImage p-1" src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"/>
+                                    <img class="offertImage p-1"
+                                         src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"/>
                                     <table class="offertTable p-1">
                                         <tr>
                                             <th class="carOfferCell">
                                                 <span class="pBorderBottom">Name: {{ samochod.marka }}</span>
                                             </th>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Type: {{ samochod.typ }}</span>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="carOfferCell">
                                                 <span class="pBorderBottom">Price: {{ samochod.cena }}</span>
                                             </th>
+                                        </tr>
+                                        <tr>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Fuel type: {{ samochod.rodzaj_paliwa }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--car-gears.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.skrzynia_biegow }}</span>
+                                            </th>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/paliwo.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.rodzaj_paliwa }}</span>
                                             </th>
                                         </tr>
                                         <tr>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Combustion: {{ samochod.spalanie }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--car-seat.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.ilosc_miejsc }}</span>
                                             </th>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Mileage: {{ samochod.przebieg }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--big-bag.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.walizki }}</span>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--air-conditioning.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.klimatyzacja }}</span>
+                                            </th>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/ilosc_drzwi.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.ilosc_drzwi }}</span>
                                             </th>
                                         </tr>
                                     </table>
+                                    <div class="rentOfferLink">
+                                        <a href='oferty/{{ samochod.id }}' class="przyciskRent">Rent</a>
+                                    </div>
                                 </div>
                             </div>
                             {% else %}
                             <div class="carousel-item">
                                 <div class="offertContainer">
-                                    <img class="offertImage p-1" src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"/>
+                                    <img class="offertImage p-1"
+                                         src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"/>
                                     <table class="offertTable p-1">
                                         <tr>
                                             <th class="carOfferCell">
                                                 <span class="pBorderBottom">Name: {{ samochod.marka }}</span>
                                             </th>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Type: {{ samochod.typ }}</span>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="carOfferCell">
                                                 <span class="pBorderBottom">Price: {{ samochod.cena }}</span>
                                             </th>
+                                        </tr>
+                                        <tr>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Fuel type: {{ samochod.rodzaj_paliwa }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--car-gears.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.skrzynia_biegow }}</span>
+                                            </th>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/paliwo.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.rodzaj_paliwa }}</span>
                                             </th>
                                         </tr>
                                         <tr>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Combustion: {{ samochod.spalanie }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--car-seat.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.ilosc_miejsc }}</span>
                                             </th>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Mileage: {{ samochod.przebieg }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--big-bag.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.walizki }}</span>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--air-conditioning.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.klimatyzacja }}</span>
+                                            </th>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/ilosc_drzwi.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.ilosc_drzwi }}</span>
                                             </th>
                                         </tr>
                                     </table>
+                                    <div class="rentOfferLink">
+                                        <a href='oferty/{{ samochod.id }}' class="przyciskRent">Rent</a>
+                                    </div>
                                 </div>
                             </div>
                             {% endif %}
@@ -309,65 +357,113 @@
                             {% if forloop.counter == 1 %}
                             <div class="carousel-item active">
                                 <div class="offertContainer">
-                                    <img class="offertImage p-1" src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"/>
+                                    <img class="offertImage p-1"
+                                         src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"/>
                                     <table class="offertTable p-1">
                                         <tr>
                                             <th class="carOfferCell">
                                                 <span class="pBorderBottom">Name: {{ samochod.marka }}</span>
                                             </th>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Type: {{ samochod.typ }}</span>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="carOfferCell">
                                                 <span class="pBorderBottom">Price: {{ samochod.cena }}</span>
                                             </th>
+                                        </tr>
+                                        <tr>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Fuel type: {{ samochod.rodzaj_paliwa }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--car-gears.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.skrzynia_biegow }}</span>
+                                            </th>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/paliwo.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.rodzaj_paliwa }}</span>
                                             </th>
                                         </tr>
                                         <tr>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Combustion: {{ samochod.spalanie }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--car-seat.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.ilosc_miejsc }}</span>
                                             </th>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Mileage: {{ samochod.przebieg }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--big-bag.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.walizki }}</span>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--air-conditioning.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.klimatyzacja }}</span>
+                                            </th>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/ilosc_drzwi.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.ilosc_drzwi }}</span>
                                             </th>
                                         </tr>
                                     </table>
+                                    <div class="rentOfferLink">
+                                        <a href='oferty/{{ samochod.id }}' class="przyciskRent">Rent</a>
+                                    </div>
                                 </div>
                             </div>
                             {% else %}
                             <div class="carousel-item">
                                 <div class="offertContainer">
-                                    <img class="offertImage p-1" src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"/>
+                                    <img class="offertImage p-1"
+                                         src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"/>
                                     <table class="offertTable p-1">
                                         <tr>
                                             <th class="carOfferCell">
                                                 <span class="pBorderBottom">Name: {{ samochod.marka }}</span>
                                             </th>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Type: {{ samochod.typ }}</span>
-                                            </th>
-                                        </tr>
-                                        <tr>
-                                            <th class="carOfferCell">
                                                 <span class="pBorderBottom">Price: {{ samochod.cena }}</span>
                                             </th>
+                                        </tr>
+                                        <tr>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Fuel type: {{ samochod.rodzaj_paliwa }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--car-gears.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.skrzynia_biegow }}</span>
+                                            </th>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/paliwo.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.rodzaj_paliwa }}</span>
                                             </th>
                                         </tr>
                                         <tr>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Combustion: {{ samochod.spalanie }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--car-seat.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.ilosc_miejsc }}</span>
                                             </th>
                                             <th class="carOfferCell">
-                                                <span class="pBorderBottom">Mileage: {{ samochod.przebieg }}</span>
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--big-bag.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.walizki }}</span>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/solid--air-conditioning.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.klimatyzacja }}</span>
+                                            </th>
+                                            <th class="carOfferCell">
+                                                <span class="pBorderBottom"><img
+                                                        src="{% static 'stronaGlowna/assets/ilosc_drzwi.png' %}"
+                                                        alt="Italian Trulli"/> {{ samochod.ilosc_drzwi }}</span>
                                             </th>
                                         </tr>
                                     </table>
+                                    <div class="rentOfferLink">
+                                        <a href='oferty/{{ samochod.id }}' class="przyciskRent">Rent</a>
+                                    </div>
                                 </div>
                             </div>
                             {% endif %}
@@ -383,18 +479,21 @@
                         </a>
 
                     </div>
+
                 </div>
                 <div class="d-md-none d-lg-block col-lg col-xl"></div>
             </div>
         </div>
     </div>
+
     <div class="container-fluid mapWrapper">
         <div class="wrapper">
             <div class="row pb-2">
                 <div class="col-12 row">
                     <div class="col-sm-12 mapa text-center">
                         <h4>Our Zones!</h4>
-                        <img src="{% static 'stronaGlowna/assets/mapa.jpg' %}" alt="Italian Trulli" style="width: 100%; height: 450px;">
+                        <img src="{% static 'stronaGlowna/assets/mapa.jpg' %}" alt="Italian Trulli"
+                             style="width: 100%; height: 450px;">
                         <p></p>
                     </div>
                 </div>

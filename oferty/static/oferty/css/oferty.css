@@ -13,6 +13,17 @@
 	width: 33%;
 }
 
+.container-fluid {
+    padding: 0px !important;
+}
+
+#offertsContainer {
+    background-image:url('../assets/background.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #oferty table {
 	font-family: arial, sans-serif;
 	margin-top:30px;
@@ -36,20 +47,13 @@
 	background-color: darkred;
 }
 
-#form {
-    background-image:url('../assets/background.jpg');
-	background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .text-center {
     margin-top: 10px;
     background-color: rgb(12, 98, 145, 0.9);
     border-radius: 25px;
 }
 
-#footerBottom table {
+footer table {
 	font-family: arial, sans-serif;
     width:100%;
     border-collapse: collapse;
@@ -57,14 +61,43 @@
     overflow: hidden;
 }
 
-#footerBottom th, #footerBottom td {
-  padding: 1em;
+footer th, footer td {
+  padding: 5px;
   background: #ddd;
   border-bottom: 2px solid blue;
 }
 
 .slidecontainer {
     width: 100%;
+}
+
+.wrapper {
+    max-width: 1300px !important;
+    margin: auto;
+}
+
+body {
+    min-width: 550px;
+}
+
+.przyciskRent {
+    background-color: darkred;
+    border: none;
+    color: white;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-size: 16px;
+}
+
+.przyciskRent:hover {
+    background-color: #bc0101;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .slider {

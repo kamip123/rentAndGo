@@ -84,7 +84,10 @@ h3{
 }
 
 .mapWrapper {
-    background-color:rgb(5, 106, 163, 1.0);
+    background-image:url('../assets/italian-road-trips-italy-drives-cover.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .infoWrapper {
@@ -103,7 +106,50 @@ h3{
     margin: auto;
     padding: 0px;
     margin-top: 0px !important;
+
+}
+
+.rentOfferLink {
     margin-bottom: 40px !important;
+}
+
+button {
+    background-color: darkred;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #bc0101;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.przyciskRent {
+    background-color: darkred;
+    border: none;
+    color: white;
+    width: 50%;
+    padding: 20px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.przyciskRent:hover {
+    background-color: #bc0101;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .carousel table {
@@ -142,6 +188,10 @@ h3{
 	padding: 8px;
 }
 */
+
+body {
+    min-width: 550px;
+}
 
 footer table {
 	font-family: arial, sans-serif;

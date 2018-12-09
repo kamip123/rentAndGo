@@ -1,0 +1,86 @@
+#topBar .col-6{
+    padding-top: 30px;
+    padding-left:15px;
+
+}
+
+.navbar-brand{
+    padding: 10px;
+	background-color: darkred;
+}
+
+#form {
+    background-image:url('../assets/background.jpg');
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-center {
+    margin-top: 10px;
+    background-color: rgb(12, 98, 145, 0.9);
+    border-radius: 25px;
+}
+
+.wrapper {
+    max-width: 1300px !important;
+    margin: auto;
+}
+
+table {
+
+	font-family: arial, sans-serif;
+    text-align: left;
+    margin: auto;
+}
+
+th, td {
+  padding: 1em;
+  background: #ddd;
+  border-bottom: 2px solid blue;
+}
+
+.p-1{
+    margin-top: 20px;
+
+}
+
+.messagesPanel{
+    margin-bottom: 20px;
+}
+
+body {
+    min-width: 550px;
+}
+
+.dataTable{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.passwordTable{
+
+    margin: auto;
+
+}
+
+.submitButton{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+footer table {
+	font-family: arial, sans-serif;
+    width:100%;
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+footer th, footer td {
+  padding: 5px;
+  background: #ddd;
+  border-bottom: 2px solid blue;
+}
+

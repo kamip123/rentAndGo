@@ -1,31 +1,32 @@
 {% extends 'profileUser.html' %}
 {% load static %}
 {% block showProfile %}
-    <div class="col-1"></div>
-    <div class="col-10 profilePanel text-center">
-        <table>
+    <div class="col col-sm col-md col-lg col-xl"></div>
+    <div class="col-10 col-sm-10 col-md-8 profilePanel text-center">
+
+        <table class="dataTable">
             <tr>
-                <th>Username: {{ user.username }}</th>
+                <th>Username:  </th> <th>{{ user.username }}</th>
             </tr>
             <tr>
-                <th>Name: {{ user.first_name }}</th>
+                <th>Name: </th> <th>{{ user.first_name }}</th>
             </tr>
             <tr>
-                <th>Surename: {{ user.last_name }}</th>
+                <th>Surename: </th> <th>{{ user.last_name }}</th>
             </tr>
             <tr>
-                <th>Email: {{ user.email }}</th>
+                <th>Email: </th> <th>{{ user.email }}</th>
             </tr>
             <tr>
-                <th>ID card: {{ profil.nr_dowodu }}</th>
+                <th>ID card: </th> <th>{{ profil.nr_dowodu }}</th>
             </tr>
             <tr>
-                <th>Driver license: {{ profil.nr_prawa_jazdy }}</th>
+                <th>Driver license: </th> <th>{{ profil.nr_prawa_jazdy }}</th>
             </tr>
             <tr>
-                <th>Phone number: {{ profil.nr_telefonu }}</th>
+                <th>Phone number: </th> <th>{{ profil.nr_telefonu }}</th>
             </tr>
         </table>
     </div>
-    <div class="col-1"></div>
+    <div class="col col-sm col-md col-lg col-xl"></div>
 {% endblock %}

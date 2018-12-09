@@ -23,7 +23,13 @@ class Samochod(models.Model):
     spalanie = models.FloatField(max_length=20, default=8)
     typ = models.CharField(max_length=50, default="Osobowe")
     ilosc_miejsc = models.IntegerField(default=5)
+    klimatyzacja = models.CharField(max_length=50, default="Brak")
+    ilosc_drzwi = models.IntegerField(default=5)
+    walizki = models.IntegerField(default=2)
+    skrzynia_biegow = models.CharField(max_length=50, default="Automat")
 
     def __str__(self):
         return self.marka
+
+
 
