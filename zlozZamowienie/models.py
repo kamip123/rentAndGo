@@ -21,13 +21,13 @@ class Ubezpieczenie(models.Model):
 
 class Zamowienie(models.Model):
     od_kiedy = models.DateTimeField(blank=True, null=True)
-    do_zaplaty = models.FloatField(max_length=20, default=200)
+    do_kiedy = models.DateTimeField(blank=True, null=True)
     dodatki = models.ManyToManyField(Dodadek, blank=True)
-    id_samochodu = models.ForeignKey(Samochod, on_delete=models.CASCADE)
     id_ubezpieczenia = models.ForeignKey(Ubezpieczenie, on_delete=models.CASCADE)
+    do_zaplaty = models.FloatField(max_length=20, default=200)
+    id_samochodu = models.ForeignKey(Samochod, on_delete=models.CASCADE)
     kupujacy = models.ForeignKey(User, on_delete=models.CASCADE)
     kaucja = models.FloatField(max_length=20, default=200)
-    do_kiedy = models.DateTimeField(blank=True, null=True)
     data_zamowienia = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
