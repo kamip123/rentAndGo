@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+
+from zlozZamowienie.views import zloz_zamowienie
 from .models import Samochod
 # Create your views here.
 
@@ -9,5 +11,4 @@ def oferty(request):
 
 
 def oferta(request, idOferty):
-    ofertaa = Samochod.objects.get(id=idOferty)
-    return render(request, 'oferta.html', {'oferta': ofertaa})
+    return redirect('zloz_zamowienie', idOferty=idOferty)

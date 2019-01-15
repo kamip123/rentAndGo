@@ -103,19 +103,19 @@
                     <div class="dane row">
                         <div class="col-md-12 col-lg-6">
                             <h3>Reception place:</h3>
-                            <form action="...">
+                            <form action="">
                                 <select class="place" name="reception">
                                     <option>-give the place of receipt-</option>
                                     <option>Tu wpisz drugą możliwość</option>
                                 </select>
                                 <input class="pickdate" type="date" name="">
-                                <select class="time" name="reception">
+                                <select class="time" name="reception1t">
                                     <option>00</option>
                                     <option>15</option>
                                     <option>30</option>
                                     <option>45</option>
                                 </select>
-                                <select class="time" name="reception">
+                                <select class="time" name="reception1tt">
                                     <option>00</option>
                                     <option>6</option>
                                     <option>7</option>
@@ -143,20 +143,21 @@
                         </div>
                         <div class="col-md-12 col-lg-6">
                             <h3>Place of return:</h3>
-                            <form action="...">
+                            <form class="site-from" action="" method="post">
+                                {% csrf_token %}
                                 <select class="place" name="return">
                                     <option>-give the place of return-</option>
                                     <option>Tu wpisz drugą możliwość</option>
                                 </select>
                                 <input class="pickdate" type="date" name="">
 
-                                <select class="time" name="reception">
+                                <select class="time" name="returnt">
                                     <option>00</option>
                                     <option>15</option>
                                     <option>30</option>
                                     <option>45</option>
                                 </select>
-                                <select class="time" name="reception">
+                                <select class="time" name="returntt">
                                     <option>00</option>
                                     <option>6</option>
                                     <option>7</option>
@@ -176,7 +177,8 @@
                                     <option>21</option>
                                     <option>22</option>
                                 </select>
-                                <a class="przycisk" href="">Search</a>
+
+                                <input class="przycisk" type="submit" value="Search" name="SearchForm">
                             </form>
                         </div>
                     </div>
@@ -263,7 +265,7 @@
                                         </tr>
                                     </table>
                                     <div class="rentOfferLink">
-                                        <a href='oferty/{{ samochod.id }}' class="przyciskRent">Rent</a>
+                                        <a href='zlozZamowienie/{{ samochod.id }}' class="przyciskRent">Rent</a>
                                     </div>
                                 </div>
                             </div>

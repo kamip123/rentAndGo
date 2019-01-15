@@ -27,6 +27,7 @@ class Samochod(models.Model):
     ilosc_drzwi = models.IntegerField(default=5)
     walizki = models.IntegerField(default=2)
     skrzynia_biegow = models.CharField(max_length=50, default="Automat")
+    zdjecie = models.ImageField(null=True, blank=True)
 
     def __str__(self):
         return self.marka

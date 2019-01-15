@@ -192,7 +192,7 @@
                     <table id="table" v-for="samochod in sortedSamochody">
                         <tr class="carOffertRow">
                             <th class="carOfferCell">
-                                <img src="http://onsurga.com/wp-content/uploads/2011/11/Bugatti-Veyron-16.4-Super-Sport.jpg"
+                                <img :src="[[ samochod.zdjecie ]]"
                                      style="height:250px;width:250px;"/>
                             </th>
                             <th class="carOfferCell">
