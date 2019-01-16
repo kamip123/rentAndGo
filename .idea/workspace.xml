@@ -2,20 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88936de3-b081-4b6b-9f76-03d778483b56" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/media/Bugatti-Veyron-16.4-Super-Sport.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/b215030b41ee99d6b48205ff6df8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/i-little-tikes-samochod-chodzik-cozy-coupe-612060.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/rubinowy-ford-mustang-do-slubu-wynajem-samochodu-na-wesele-samochod-2392196.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/toyota_c_hr_2.1200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oferty/migrations/0008_samochod_zdjecie.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oferty/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/oferty/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oferty/templates/oferty.html" beforeDir="false" afterPath="$PROJECT_DIR$/oferty/templates/oferty.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oferty/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/oferty/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stronaGlowna/templates/stronaGlowna.html" beforeDir="false" afterPath="$PROJECT_DIR$/stronaGlowna/templates/stronaGlowna.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stronaGlowna/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/stronaGlowna/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/zlozZamowienie/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/zlozZamowienie/forms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +16,20 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zlozZamowienie/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="24" selection-start-column="24" selection-end-column="24" />
+            <state relative-caret-position="238">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zlozZamowienie/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -531,13 +529,6 @@
     <entry file="file://$PROJECT_DIR$/rentandgo/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/zlozZamowienie/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zlozZamowienie/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -599,10 +590,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zlozZamowienie/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zlozZamowienie/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="24" selection-start-column="24" selection-end-column="24" />
+        <state relative-caret-position="238">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

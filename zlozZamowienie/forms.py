@@ -1,6 +1,6 @@
 from django import forms
 
-from .models import Zamowienie
+from .models import Zamowienie, Dodadek
 
 
 class ZlozZamowienie(forms.ModelForm):
@@ -11,12 +11,12 @@ class ZlozZamowienie(forms.ModelForm):
     )
 
     ubezpieczenie = forms.ChoiceField(label="", initial='', widget=forms.Select, choices=CHOICES, required=True)
+    dodatki = forms.ModelMultipleChoiceField(queryset=Dodadek.objects.all(), widget=forms.CheckboxSelectMultiple)
 
     class Meta:
         model = Zamowienie
-        fields = ['od_kiedy', 'do_kiedy', 'dodatki']
+        fields = ['od_kiedy', 'do_kiedy']
         widgets = {
             'od_kiedy': forms.DateInput(attrs={'class': 'dateinput1'}),
             'do_kiedy': forms.DateInput(attrs={'class': 'dateinput2'}),
-            'dodatki': forms.ModelMultipleChoiceField(widget=forms.CheckboxSelectMultiple)
         }
