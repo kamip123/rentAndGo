@@ -268,3 +268,18 @@ footer th, footer td {
         margin-top: 20px;
         }
 
+    .tableZamow {
+
+        font-family: arial, sans-serif;
+        text-align: left;
+        margin: auto;
+        border-right: 2px solid red;
+
+    }
+
+    .tableZamow th, td {
+      padding: 1em;
+      background: #ddd;
+      border-bottom: 2px solid red;
+
+    }

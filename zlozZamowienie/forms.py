@@ -5,9 +5,9 @@ from .models import Zamowienie, Dodadek
 
 class ZlozZamowienie(forms.ModelForm):
     CHOICES = (
-        (1, '1'),
-        (2, '2'),
-        (3, '3'),
+        (1, 'Podstawowe'),
+        (2, 'Middle'),
+        (3, 'All risks'),
     )
 
     ubezpieczenie = forms.ChoiceField(label="", initial='', widget=forms.Select, choices=CHOICES, required=True)

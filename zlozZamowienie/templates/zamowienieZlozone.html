@@ -114,58 +114,9 @@
     <div class="container-fluid">
         <div class="wrapper row">
             <div class="col-12 row">
-                {% if user.is_authenticated %}
-                 <div class="col-sm-12 col-md-7 podanieDanych pb-2">
-                     <form class="site-from" action="" method="post">
-                    {% csrf_token %}
-                    <table class ="tableZamow">
-                        {{zamowienie.errors}}
-                        <tr>
-                            <th class="carOfferCell">
-                                From:
-                            </th>
-                            <th class="carOfferCell">
-                                {{zamowienie.od_kiedy.errors.as_text}}
-                                {{zamowienie.od_kiedy}}
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="carOfferCell">
-                                To:
-                            </th>
-                            <th class="carOfferCell">
-                                {{zamowienie.do_kiedy.errors.as_text}}
-                                {{zamowienie.do_kiedy}}
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="carOfferCell">
-                                Additional things:
-                            </th>
-                            <th class="carOfferCell">
-                                {{zamowienie.dodatki.errors.as_text}}
-                                {{zamowienie.dodatki}}
-                            </th>
-                        </tr>
-                        <tr>
-                            <th class="carOfferCell">
-                                Insurance:
-                            </th>
-                            <th class="carOfferCell">
-                                {{zamowienie.ubezpieczenie.errors.as_text}}
-                                {{zamowienie.ubezpieczenie}}
-                            </th>
-                        </tr>
 
-                    </table>
-                    <div class="col-6" style="margin:auto;">
-                        <input type="submit" value="Signup" name="SignUpForm">
-                    </div>
-                </form>
-                </div>
-                {% else %}
-                <h2>Log in to make a rental.</h2>
-                {% endif %}
+                <h2>You've made an order! You can see it in the profile menu!</h2>
+
             </div>
         </div>
     </div>
