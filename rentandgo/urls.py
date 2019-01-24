@@ -18,6 +18,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from .routers import router
+from django.conf.urls import url
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -33,7 +34,9 @@ urlpatterns = [
     path('zamowienia/', include('zamowienia.urls')),
     path('wyloguj/', include('wyloguj.urls')),
     path('profil/', include('profil.urls')),
-    path('api/', include(router.urls))
+    path('api/', include(router.urls)),
+    url(r'^paypal/', include('paypal.standard.ipn.urls')),
+    url(r'^oauth/', include('social_django.urls', namespace='social')),
 ]
 
 if settings.DEBUG:

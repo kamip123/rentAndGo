@@ -18,12 +18,14 @@ class Ubezpieczenie(models.Model):
     nazwa = models.CharField(max_length=50, default="Pokryjemy wszystkie straty")
     procent = models.FloatField(max_length=20, default=90)
 
+
 class Kierowca(models.Model):
     nazwisko = models.OneToOneField(User, on_delete=models.CASCADE)
     imię = nr_dowodu = models.CharField(max_length=18)
     nr_dowodu = models.CharField(max_length=12, default=446546546)
     nr_prawa_jazdy = models.CharField(max_length=12, default=446546546)
     nr_telefonu = models.CharField(max_length=12, default="+48854125894")
+
 
 class Zamowienie(models.Model):
     od_kiedy = models.DateTimeField()

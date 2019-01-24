@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'wyloguj',
     'profil',
     'rest_framework',
+    'paypal.standard.ipn',
 ]
 
 MIDDLEWARE = [
@@ -129,6 +130,11 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
+
+# paypal
+PAYPAL_RECEIVER_EMAIL = 'parzyjaglakamil@gmail.com'
+PAYPAL_IDENTITY_TOKEN = ''
+PAYPAL_TEST = True
 
 STATIC_URL = '/static/'
 
